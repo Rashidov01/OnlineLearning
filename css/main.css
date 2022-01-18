@@ -409,7 +409,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.02em;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #fff;
   color: #696984;
 }
 
@@ -443,6 +443,7 @@ a {
 }
 
 .hero {
+  margin-bottom: 100px;
   padding: 70px 0 320px;
   background-image: url(../../img/header-bg.png);
   background-repeat: no-repeat;
@@ -494,11 +495,12 @@ a {
 
 .hero-main__wrapper-btn {
   margin-right: 32px;
-  padding: 24px 18px 24px 24px;
+  padding: 24px 24px 24px 30px;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   background-color: #fff;
+  background-repeat: no-repeat;
   cursor: pointer;
   border: none;
 }
@@ -609,5 +611,49 @@ a {
 .sign-up__btn {
   background-color: #F48C06;
   color: #fff;
+}
+
+.company {
+  margin-bottom: 168px;
+}
+
+.company__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company__text {
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 160%;
+  color: #696984;
+}
+
+.company__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-list__item:not(:last-child) {
+  margin-right: 75px;
 }
 /*# sourceMappingURL=main.css.map */

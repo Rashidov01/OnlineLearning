@@ -1,0 +1,28 @@
+.company{
+  margin-bottom: 168px;
+}
+
+.company__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__text {
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 160%;
+  color: $color-text;
+}
+
+.company__list{
+  @include list-unstyled;
+  display: flex; 
+  align-items: center;
+}
+
+.company-list__item:not(:last-child){
+  margin-right: 75px;
+}
