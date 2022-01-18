@@ -1,0 +1,79 @@
+.header{
+  padding-top: 70px;
+}
+
+.header__inner {
+  @include d-flex(space-between);
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 25px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: #113C49;
+  position: relative;
+
+  &::before{
+    content: '';
+    background-image: url(../../icon/logo-icon.svg);
+    @include background-image (contain);
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    margin: auto;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__item {
+  margin-right: 80px;
+}
+
+.header-nav__link {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 33px;
+  color: #252641;
+}
+
+.header-nav__btn {
+  margin-right: 34px;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 80px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.login__btn {
+  background-color: $color-light;
+  box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+}
+
+.sign-up__btn {
+  background-color: $color-premium;
+  color: $color-light;
+}

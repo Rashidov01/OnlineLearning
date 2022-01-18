@@ -4,10 +4,16 @@
   list-style: none;
 }
 
-@mixin d-flex ($justify) {
+@mixin d-flex ($justify-content) {
   display: flex;
   align-items: center;
-  justify-content: $justify;
+  justify-content: $justify-content;
+}
+
+@mixin background-image($bg-size) {
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  background-position: center;
 }
 
 @mixin cssretina {
