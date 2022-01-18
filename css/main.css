@@ -437,13 +437,81 @@ a {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1320px;
-  padding: 0 40px;
+  max-width: 1610px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
+.hero {
+  padding: 70px 0 380px;
+  background-image: url(../../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero-main__title {
+  margin-bottom: 34px;
+  width: 680px;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 81px;
+  color: #F48C06;
+}
+
+.hero-main__title-add {
+  color: #2F327D;
+}
+
+.hero-main__text {
+  margin-bottom: 52px;
+  font-family: "Poppins", sans-serif;
+  width: 525px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.hero-main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-main__wrapper-link {
+  padding: 22px 38px;
+  margin-right: 40px;
+  background-color: #F48C06;
+  border-radius: 80px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.hero-main__wrapper-btn {
+  margin-right: 32px;
+  padding: 24px 18px 24px 24px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-main__wrapper-desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #252641;
+}
+
 .header {
-  padding-top: 70px;
+  margin-bottom: 210px;
 }
 
 .header__inner {
@@ -460,11 +528,12 @@ a {
 
 .header__logo {
   margin: 0;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.04em;
   color: #113C49;
   position: relative;
+  z-index: 1;
 }
 
 .header__logo::before {
@@ -509,7 +578,7 @@ a {
 }
 
 .header-nav__link {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 33px;
   color: #252641;
@@ -517,7 +586,7 @@ a {
 
 .header-nav__btn {
   margin-right: 34px;
-  padding: 4px 20px;
+  padding: 13px 50px;
   border: none;
   border-radius: 80px;
   background-color: transparent;

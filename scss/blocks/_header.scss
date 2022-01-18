@@ -1,5 +1,5 @@
 .header{
-  padding-top: 70px;
+  margin-bottom: 210px;
 }
 
 .header__inner {
@@ -8,11 +8,12 @@
 
 .header__logo {
   margin: 0;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.04em;
   color: #113C49;
   position: relative;
+  z-index: 1;
 
   &::before{
     content: '';
@@ -45,7 +46,7 @@
 }
 
 .header-nav__link {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 33px;
   color: #252641;
@@ -53,7 +54,7 @@
 
 .header-nav__btn {
   margin-right: 34px;
-  padding: 4px 20px;
+  padding: 13px 50px;
   border: none;
   border-radius: 80px;
   background-color: transparent;
