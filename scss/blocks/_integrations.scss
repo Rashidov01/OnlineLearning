@@ -1,0 +1,51 @@
+.integration {
+  margin-bottom: 170px;
+}
+
+.integrations__inner {
+  @include d-flex(center);
+}
+
+.integrations__list {
+  @include list-unstyled;
+  width: 450px;
+  @include d-flex(space-between);
+  flex-wrap: wrap;
+  margin: -42px 290px -42px 0;
+}
+
+.integrations__item {
+  margin: 42px 0;
+}
+
+.integrations__entrance {
+  @include heading-style;
+}
+
+.integrations__title {
+  margin-bottom: 30px;
+  width: 480px;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 160%;
+  color: $color-title;
+
+}
+
+.integrations__title-add {
+  color: $color-premium;
+}
+
+.integrations__text {
+  margin-bottom: 44px;
+  width: 700px;
+  font-family: $font-main;
+  font-size: 24px;
+  line-height: 180%;
+  color: $color-text;
+}
+
+.integrations__btn {
+  @include button-style;
+}

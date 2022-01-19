@@ -928,8 +928,8 @@ a {
 .facility__detail::after {
   position: absolute;
   bottom: 0;
-  top: 12%;
-  right: 5px;
+  top: 20%;
+  right: -10px;
   z-index: 1;
   margin: auto;
   width: 30px;
@@ -967,7 +967,7 @@ a {
 
 .facility__text {
   margin-bottom: 30px;
-  width: 620px;
+  width: 700px;
   font-size: 24px;
   line-height: 180%;
 }
@@ -1193,5 +1193,104 @@ a {
   border: 1px solid #F48C06;
   border-radius: 80px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.integration {
+  margin-bottom: 170px;
+}
+
+.integrations__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.integrations__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -42px 290px -42px 0;
+}
+
+.integrations__item {
+  margin: 42px 0;
+}
+
+.integrations__entrance {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #525596;
+}
+
+.integrations__entrance::before {
+  margin-right: 30px;
+  width: 80px;
+  height: 1px;
+  background-color: #525596;
+  content: '';
+}
+
+.integrations__title {
+  margin-bottom: 30px;
+  width: 480px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 160%;
+  color: #2F327D;
+}
+
+.integrations__title-add {
+  color: #F48C06;
+}
+
+.integrations__text {
+  margin-bottom: 44px;
+  width: 700px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  line-height: 180%;
+  color: #696984;
+}
+
+.integrations__btn {
+  padding: 20px 38px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  line-height: 180%;
+  color: #F48C06;
+  border: 1px solid #F48C06;
+  border-radius: 80px;
+  background-color: transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
