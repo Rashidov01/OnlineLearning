@@ -1,3 +1,7 @@
+.features{
+  margin-bottom: 160px;
+}
+
 .features__title {
   margin-bottom: 20px;
   text-align: center;
@@ -133,4 +137,8 @@
 
 .discuss--text{
   width: 540px;
+}
+
+.features__button{
+  @include d-flex(center);
 }

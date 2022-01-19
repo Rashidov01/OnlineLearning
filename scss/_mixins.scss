@@ -20,6 +20,17 @@
   color: $color-title;
 }
 
+@mixin button-style {
+  padding: 20px 38px;
+  font-family: $font-main;
+  font-size: 22px;
+  line-height: 180%;
+  color: $color-premium;
+  border: 1px solid $color-premium;
+  border-radius: 80px;
+  background-color: transparent;
+}
+
 @mixin cssretina {
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),

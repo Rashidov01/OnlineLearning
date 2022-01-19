@@ -1008,6 +1008,10 @@ a {
   content: '';
 }
 
+.features {
+  margin-bottom: 160px;
+}
+
 .features__title {
   margin-bottom: 20px;
   text-align: center;
@@ -1166,5 +1170,28 @@ a {
 
 .discuss--text {
   width: 540px;
+}
+
+.features__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button--view {
+  padding: 20px 38px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  line-height: 180%;
+  color: #F48C06;
+  border: 1px solid #F48C06;
+  border-radius: 80px;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
