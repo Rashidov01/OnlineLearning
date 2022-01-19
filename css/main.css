@@ -512,6 +512,12 @@ a {
   color: #252641;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/header-bg@2x.png);
+  }
+}
+
 .header {
   margin-bottom: 210px;
 }
@@ -655,5 +661,102 @@ a {
 
 .company-list__item:not(:last-child) {
   margin-right: 75px;
+}
+
+.software__inner {
+  text-align: center;
+}
+
+.software__title {
+  margin-bottom: 24px;
+  text-align: center;
+  color: #2F327D;
+  font-size: 36px;
+  line-height: 180%;
+}
+
+.software__title-add {
+  color: #F48C06;
+}
+
+.software__desc {
+  margin: 0 auto 160px;
+  width: 790px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  color: #696984;
+}
+
+.software__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.software-features__item {
+  position: relative;
+  margin-right: 60px;
+  padding: 122px 54px 54px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+          box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+}
+
+.software-features__item:last-child {
+  margin-right: 0;
+}
+
+.software-features__item::before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 28px 34px;
+  background-image: url(../../icon/file.svg);
+  background-repeat: no-repeat;
+  background-size: 34px 46px;
+  background-position: center;
+  background-color: #5B72EE;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  content: '';
+}
+
+.software-features__item:nth-child(2)::before {
+  background-color: #F48C06;
+  background-size: 48px 48px;
+  background-image: url(../../icon/calendar.svg);
+}
+
+.software-features__item:last-child::before {
+  background-color: #29B9E7;
+  background-image: url(../../icon/users.svg);
+  background-size: 55px 38px;
+}
+
+.software-features__title {
+  margin-bottom: 24px;
+  color: #2F327D;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.software-features__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  color: #696984;
 }
 /*# sourceMappingURL=main.css.map */

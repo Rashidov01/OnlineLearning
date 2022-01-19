@@ -63,3 +63,9 @@
   line-height: 36px;
   color: #252641;
 }
+
+@include cssretina {
+  .hero{
+    background-image: url(../../img/header-bg@2x.png);
+  }
+}
