@@ -1,0 +1,82 @@
+.skilline__title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 180%;
+  text-align: center;
+  color: $color-title;
+}
+
+.skilline__text {
+  margin: 0 auto 80px;
+  width: 1100px;
+  font-size: 24px;
+  line-height: 180%;
+  text-align: center;
+  color: $color-text;
+}
+
+.skilline__account {
+  margin: 0 auto;
+  @include d-flex(center);
+  text-align: center;
+}
+
+.skilline__account-item {
+  padding: 130px 160px;
+  margin-right: 100px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include background-image(cover);
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.instructor__account{
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background-image: url(../../img/instructor.png);
+}
+
+.student__account{
+  background-image: url(../../img/student.png);
+}
+
+.skilline__account-heading {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.skilline__account-btn {
+  padding: 24px 38px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.instructor__btn{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.student__btn{
+  background-color: rgba(35, 189, 238, 0.9);
+}
+
+.skilline__account-student {
+  padding: 130px 160px;
+  border-radius: 20px;
+ 
+  @include background-image(cover)
+}
