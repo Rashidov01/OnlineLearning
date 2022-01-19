@@ -663,6 +663,31 @@ a {
   margin-right: 75px;
 }
 
+.google__logo {
+  width: 168px;
+  height: 55px;
+}
+
+.netflix__logo {
+  width: 150px;
+  height: 40px;
+}
+
+.airbnb__logo {
+  width: 160px;
+  height: 50px;
+}
+
+.amazon__logo {
+  width: 154px;
+  height: 38px;
+}
+
+.grab__logo {
+  width: 130px;
+  height: 60px;
+}
+
 .software__inner {
   text-align: center;
 }
@@ -692,6 +717,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -700,7 +728,7 @@ a {
 .software-features__item {
   position: relative;
   margin-right: 60px;
-  padding: 122px 54px 54px;
+  padding: 122px 60px 50px;
   text-align: center;
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
@@ -726,6 +754,8 @@ a {
   background-color: #5B72EE;
   width: 100px;
   height: 100px;
+  -webkit-box-shadow: 0px 16px 40px rgba(37, 44, 113, 0.1);
+          box-shadow: 0px 16px 40px rgba(37, 44, 113, 0.1);
   border-radius: 50%;
   content: '';
 }
@@ -744,6 +774,7 @@ a {
 
 .software-features__title {
   margin-bottom: 24px;
+  min-height: 90px;
   color: #2F327D;
   font-style: 400;
   font-weight: 500;
