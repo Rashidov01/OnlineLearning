@@ -408,7 +408,7 @@ body {
   overflow-x: hidden;
   font-weight: normal;
   letter-spacing: 0.02em;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #696984;
 }
@@ -466,8 +466,8 @@ a {
 
 .hero-main__text {
   margin-bottom: 52px;
-  font-family: "Poppins", sans-serif;
-  width: 525px;
+  font-family: "Nunito Sans", sans-serif;
+  width: 480px;
   font-weight: normal;
   font-size: 20px;
   line-height: 160%;
@@ -1036,6 +1036,17 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.feature__wrapper:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .features-wrapper__holder {
@@ -1081,6 +1092,14 @@ a {
 .features-wrapper__title--interface {
   margin-bottom: 50px;
   width: 540px;
+}
+
+.features-wrapper__title--tools {
+  width: 390px;
+}
+
+.features-wrapper__title--management {
+  width: 420px;
 }
 
 .features-wrapper__list {
@@ -1131,9 +1150,21 @@ a {
 }
 
 .features-wrapper__text {
-  width: 400px;
+  width: 440px;
   font-size: 22px;
   line-height: 180%;
   color: #696984;
+}
+
+.tools--text {
+  width: 580px;
+}
+
+.management--text {
+  width: 640px;
+}
+
+.discuss--text {
+  width: 540px;
 }
 /*# sourceMappingURL=main.css.map */
