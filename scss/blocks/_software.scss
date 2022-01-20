@@ -31,11 +31,10 @@
   @include d-flex(center);
 }
 
-.software-features__item {
+.software__features-item {
   position: relative;
   margin-right: 60px;
-  padding: 122px 60px 50px;
-  min-height: 450px;
+  padding: 122px 30px 50px;
   text-align: center;
   background-color: $color-light;
   box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
@@ -77,9 +76,9 @@
   }
 }
 
-.software-features__title {
+.software__features-title {
   margin-bottom: 24px;
-  min-height: 90px;
+  min-height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +89,7 @@
   line-height: 45px;
 }
 
-.software-features__text {
+.software__features-text {
   margin: 0;
   font-style: normal;
   font-weight: normal;

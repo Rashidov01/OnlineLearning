@@ -1,5 +1,5 @@
 .header{
-  margin-bottom: 210px;
+  margin-bottom: 120px;
 }
 
 .header__inner {
@@ -53,7 +53,6 @@
 }
 
 .header__nav-btn {
-  margin-right: 34px;
   padding: 13px 50px;
   border: none;
   border-radius: 80px;
@@ -63,13 +62,13 @@
   font-size: 22px;
   line-height: 33px;
 
-
   &:last-child {
     margin-right: 0;
   }
 }
 
 .header__nav-btn-login{
+  margin-right: 34px;
   background-color: $color-light;
   box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
 }
@@ -77,4 +76,67 @@
 .header__nav-btn-sign {
   background-color: $color-premium;
   color: $color-light;
+}
+
+.header__nav-menu{
+  background-image: url(../../icon/hamburg.svg);
+  @include background-image(contain);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+@include breakpoint-down(1280px){
+  .header__nav-item{
+    margin-right: 55px;
+  }
+
+  .header__nav-link{
+    font-size: 18px;
+  }
+
+  .header__nav-btn{
+    padding: 8px 30px;
+  }
+
+  .header__nav-btn-login{
+    margin-right: 25px;
+  }
+}
+
+@include breakpoint-down(980px){
+  .header__logo{
+    font-size: 25px;
+  }
+
+  .header__nav-btn{
+    display: block;
+    padding: 5px 18px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .header__nav-btn-login{
+    margin-right: 20px;
+  }
+
+  .header__nav-item{
+    margin-right: 40px;
+  }
+
+  .header__nav-link{
+    font-size: 15px;
+  }
+}
+
+@include breakpoint-down(780px){
+  .header__nav{
+    display: none;
+  }
+
+  .header__nav-menu{
+    display: block;
+  }
 }
