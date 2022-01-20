@@ -1,0 +1,118 @@
+.news {
+  margin-bottom: 160px;
+}
+
+.news__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__heading {
+  margin-bottom: 20px;
+  text-align: center;
+  color: $color-title;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 180%;
+}
+
+.news__desc {
+  margin-bottom: 100px;
+  font-family: $font-stack;
+  color: $color-text;
+  font-size: 24px;
+  line-height: 180%;
+  text-align: center;
+}
+
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news__wrapper-img {
+  margin-bottom: 40px;
+}
+
+.news__wrapper-info {
+  padding: 2px 34px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: $color-premium-light;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: #252641;
+  border-radius: 80px;
+}
+
+.news__wrapper-title {
+  margin-bottom: 20px;
+  width: 610px;
+  color: #252641;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+}
+
+.news__wrapper-text {
+  margin-bottom: 30px;
+  width: 610px;
+  color: $color-text;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+}
+
+.news__wrapper-link {
+  color: $color-text;
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+}
+
+.news__content {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.news__content-holder {
+  position: relative;
+}
+
+.news__content-holder-img {
+  margin-right: 40px;
+}
+
+.news__content-holder-span {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  font-size: 18px;
+  padding: 2px 5px;
+  display: inline-block;
+  @include span-style;
+}
+
+.news__content-info-heading {
+  margin-bottom: 20px;
+  width: 470px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  color: #252641;
+}
+
+.news__content-info-text {
+  width: 450px;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: $color-text;
+}

@@ -35,24 +35,24 @@
   align-items: center;
 }
 
-.header-nav__list {
+.header__nav-list {
   @include list-unstyled;
   display: flex;
   align-items: center;
 }
 
-.header-nav__item {
+.header__nav-item {
   margin-right: 80px;
 }
 
-.header-nav__link {
+.header__nav-link {
   font-size: 22px;
   font-weight: normal;
   line-height: 33px;
   color: #252641;
 }
 
-.header-nav__btn {
+.header__nav-btn {
   margin-right: 34px;
   padding: 13px 50px;
   border: none;
@@ -69,12 +69,12 @@
   }
 }
 
-.login__btn {
+.header__nav-btn-login{
   background-color: $color-light;
   box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
 }
 
-.sign-up__btn {
+.header__nav-btn-sign {
   background-color: $color-premium;
   color: $color-light;
 }

@@ -16,6 +16,12 @@
   background-position: center;
 }
 
+@mixin breakpoint-down ($size){
+  @media only screen  and (max-width: $size){
+    @content;
+  }
+}
+
 @mixin title {
   color: $color-title;
 }
@@ -43,13 +49,25 @@
   text-transform: uppercase;
   color: #525596;
 
-  &::before{
+  &::before {
     margin-right: 30px;
     width: 80px;
     height: 1px;
     background-color: #525596;
     content: '';
   }
+}
+
+@mixin span-style {
+  padding: 5px 8px;
+  background-color: $color-premium-light;
+  text-transform: uppercase;
+  border-radius: 80px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #252641;
 }
 
 @mixin cssretina {
