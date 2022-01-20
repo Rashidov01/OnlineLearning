@@ -9,6 +9,10 @@
   line-height: 180%;
   text-align: center;
   color: $color-title;
+
+  &-add{
+    color: $color-premium;
+  }
 }
 
 .skilline__text {
@@ -38,12 +42,12 @@
   }
 }
 
-.instructor__account{
+.skilline__account-item-instructor{
   border: 1px solid rgba(0, 0, 0, 0.6);
   background-image: url(../../img/instructor.png);
 }
 
-.student__account{
+.skilline__account-item-student{
   background-image: url(../../img/student.png);
 }
 
@@ -59,6 +63,7 @@
 
 .skilline__account-btn {
   padding: 24px 38px;
+  display: inline-block;
   font-weight: 500;
   font-size: 22px;
   color: #FFFFFF;
@@ -69,18 +74,141 @@
   cursor: pointer;
 }
 
-.instructor__btn{
+.skilline__account-btn-instructor{
   background-color: transparent;
   border: 1px solid #fff;
 }
 
-.student__btn{
+.skilline__account-btn-student{
   background-color: rgba(35, 189, 238, 0.9);
 }
 
 .skilline__account-student {
   padding: 130px 160px;
   border-radius: 20px;
- 
   @include background-image(cover)
+}
+
+@include breakpoint-down(1360px){
+  .skilline__account-item{
+    margin-right: 60px;
+    padding: 100px 120px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+@include breakpoint-down(1200px){
+  .skilline__text{
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .skilline__account-heading{
+    font-size: 25px;
+  }
+
+  .skilline__account-btn{
+    padding: 20px 28px;
+    font-size: 18px;
+  }
+}
+
+@include breakpoint-down(1050px){
+  .skilline__text{
+    font-size: 16px;
+  }
+
+  .skilline__account-item{
+    padding: 80px 100px;
+    margin-right: 40px;
+  }
+}
+
+@include breakpoint-down(980px){
+  .skilline__account-item{
+    padding: 60px 80px;
+  }
+
+  .skilline__account-heading{
+    font-size: 18px;
+  }
+
+  .skilline__account-btn{
+    padding: 15px 20px;
+  }
+}
+
+@include breakpoint-down(840px){
+  .skilline__title{
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+
+  .skilline__account-item{
+    padding: 50px 60px;
+  }
+
+  .skilline__text{
+    font-size: 14px;
+  }
+}
+
+@include breakpoint-down(780px){
+  .skilline__account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skilline__account-item{
+    padding: 80px 50px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .skilline__account-heading{
+    font-size: 22px;
+  }
+
+  .skilline__account-heading{
+    line-height: 28px;
+  }
+
+  .skilline__account-btn{
+    line-height: 22px;
+  }
+}
+
+@include breakpoint-down(420px){
+  .skilline__title{
+    font-size: 24px;
+  }
+
+  .skilline__text{
+    margin-bottom: 40px;
+  }
+
+  .skilline__account-heading{
+    font-size: 16px;
+  }
+
+  .skilline__account-btn{
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@include cssretina{
+  .skilline__account-item-instructor{
+    background-image: url(../../img/instructor@2x.png);
+  }
+  
+  .skilline__account-item-student{
+    background-image: url(../../img/student@2x.png);
+  }
 }

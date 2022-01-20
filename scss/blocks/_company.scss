@@ -96,6 +96,10 @@
 }
 
 @include breakpoint-down(780px){
+  .company{
+    margin-bottom:120px;
+  }
+
   .company__text{
     margin-bottom: 25px;
     font-size: 16px;
@@ -128,6 +132,10 @@
 }
 
 @include breakpoint-down(420px){
+  .company{
+    margin-bottom: 80px;
+  }
+
   .company__text{
     margin-bottom: 25px;
     font-size: 14px;

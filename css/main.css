@@ -947,6 +947,9 @@ a {
 }
 
 @media only screen and (max-width: 780px) {
+  .company {
+    margin-bottom: 120px;
+  }
   .company__text {
     margin-bottom: 25px;
     font-size: 16px;
@@ -974,6 +977,9 @@ a {
 }
 
 @media only screen and (max-width: 420px) {
+  .company {
+    margin-bottom: 80px;
+  }
   .company__text {
     margin-bottom: 25px;
     font-size: 14px;
@@ -1042,6 +1048,7 @@ a {
 
 .software__features-item {
   position: relative;
+  height: 450px;
   margin-right: 60px;
   padding: 122px 30px 50px;
   text-align: center;
@@ -1089,7 +1096,7 @@ a {
 
 .software__features-title {
   margin-bottom: 24px;
-  min-height: 140px;
+  min-height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,6 +1122,96 @@ a {
   color: #696984;
 }
 
+@media only screen and (max-width: 1280px) {
+  .software__title {
+    font-size: 28px;
+  }
+  .software__desc {
+    font-size: 18px;
+  }
+  .software__features-item {
+    padding: 100px 20px 35px;
+  }
+  .software__features-item::before {
+    padding: 20px 28px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    content: '';
+  }
+  .software__features-title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .software__features-text {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .software {
+    margin-bottom: 120px;
+  }
+  .software__features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .software__desc {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .software__features-item {
+    padding: 70px 18px 30px;
+    margin-right: 0;
+    margin-bottom: 80px;
+    width: 100%;
+    height: auto;
+  }
+  .software__features-item:last-child {
+    margin-bottom: 0;
+  }
+  .software__features-title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 18px;
+  }
+  .software__features-text {
+    font-size: 15px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .software {
+    margin-bottom: 90px;
+  }
+  .software__title {
+    font-size: 24px;
+  }
+  .software__desc {
+    font-size: 16px;
+  }
+  .software__features-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .software__features-text {
+    font-size: 14px;
+  }
+}
+
 .skilline {
   margin-bottom: 160px;
 }
@@ -1126,6 +1223,10 @@ a {
   line-height: 180%;
   text-align: center;
   color: #2F327D;
+}
+
+.skilline__title-add {
+  color: #F48C06;
 }
 
 .skilline__text {
@@ -1166,12 +1267,12 @@ a {
   margin-right: 0;
 }
 
-.instructor__account {
+.skilline__account-item-instructor {
   border: 1px solid rgba(0, 0, 0, 0.6);
   background-image: url(../../img/instructor.png);
 }
 
-.student__account {
+.skilline__account-item-student {
   background-image: url(../../img/student.png);
 }
 
@@ -1187,6 +1288,7 @@ a {
 
 .skilline__account-btn {
   padding: 24px 38px;
+  display: inline-block;
   font-weight: 500;
   font-size: 22px;
   color: #FFFFFF;
@@ -1197,12 +1299,12 @@ a {
   cursor: pointer;
 }
 
-.instructor__btn {
+.skilline__account-btn-instructor {
   background-color: transparent;
   border: 1px solid #fff;
 }
 
-.student__btn {
+.skilline__account-btn-student {
   background-color: rgba(35, 189, 238, 0.9);
 }
 
@@ -1212,6 +1314,123 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (max-width: 1360px) {
+  .skilline__account-item {
+    margin-right: 60px;
+    padding: 100px 120px;
+  }
+  .skilline__account-item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .skilline__text {
+    width: 100%;
+    font-size: 19px;
+  }
+  .skilline__account-heading {
+    font-size: 25px;
+  }
+  .skilline__account-btn {
+    padding: 20px 28px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .skilline__text {
+    font-size: 16px;
+  }
+  .skilline__account-item {
+    padding: 80px 100px;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .skilline__account-item {
+    padding: 60px 80px;
+  }
+  .skilline__account-heading {
+    font-size: 18px;
+  }
+  .skilline__account-btn {
+    padding: 15px 20px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .skilline__title {
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+  .skilline__account-item {
+    padding: 50px 60px;
+  }
+  .skilline__text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .skilline__account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skilline__account-item {
+    padding: 80px 50px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .skilline__account-heading {
+    font-size: 22px;
+  }
+  .skilline__account-heading {
+    line-height: 28px;
+  }
+  .skilline__account-btn {
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .skilline__title {
+    font-size: 24px;
+  }
+  .skilline__text {
+    margin-bottom: 40px;
+  }
+  .skilline__account-heading {
+    font-size: 16px;
+  }
+  .skilline__account-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .skilline__account-item-instructor {
+    background-image: url(../../img/instructor@2x.png);
+  }
+  .skilline__account-item-student {
+    background-image: url(../../img/student@2x.png);
+  }
 }
 
 .facility {

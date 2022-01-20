@@ -33,6 +33,7 @@
 
 .software__features-item {
   position: relative;
+  height: 450px;
   margin-right: 60px;
   padding: 122px 30px 50px;
   text-align: center;
@@ -78,7 +79,7 @@
 
 .software__features-title {
   margin-bottom: 24px;
-  min-height: 140px;
+  min-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,4 +97,100 @@
   font-size: 20px;
   line-height: 180%;
   color: $color-text;
+}
+
+@include breakpoint-down(1280px){
+  .software__title{
+    font-size: 28px;
+  }
+
+  .software__desc{
+    font-size: 18px;
+  }
+
+  .software__features-item{
+    padding: 100px 20px 35px;
+
+    &::before{
+      padding: 20px 28px;
+      top: -40px;
+      width: 80px;
+      height: 80px;
+      content: '';
+    }
+  }
+
+  .software__features-title{
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .software__features-text{
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@include breakpoint-down(980px){
+  .software{
+    margin-bottom: 120px;
+  }
+
+  .software__features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .software__desc{
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  .software__features-item{
+    padding: 70px 18px 30px;
+    margin-right: 0;
+    margin-bottom: 80px;
+    width: 100%;
+    height: auto;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .software__features-title{
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 18px;
+  }
+
+  .software__features-text{
+    font-size: 15px;
+    line-height: 32px;
+  }
+}
+
+@include breakpoint-down(480px){
+  .software{
+    margin-bottom: 90px;
+  }
+
+  .software__title{
+    font-size: 24px;
+  }
+
+  .software__desc{
+    font-size: 16px;
+  }
+
+  .software__features-title{
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .software__features-text{
+    font-size: 14px;
+  }
 }
