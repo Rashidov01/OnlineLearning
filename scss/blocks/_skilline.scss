@@ -157,6 +157,10 @@
 }
 
 @include breakpoint-down(780px){
+  .skilline{
+    margin-bottom: 120px;
+  }
+
   .skilline__account{
     display: flex;
     flex-direction: column;
@@ -185,6 +189,10 @@
 }
 
 @include breakpoint-down(420px){
+  .skilline{
+    margin-bottom: 80px;
+  }
+  
   .skilline__title{
     font-size: 24px;
   }
