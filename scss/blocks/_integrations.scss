@@ -47,5 +47,6 @@
 }
 
 .integrations__btn {
+  font-family: $font-stack;
   @include button-style;
 }
