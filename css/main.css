@@ -2464,7 +2464,10 @@ a {
     height: 70px;
   }
   .testimonial__comment {
-    padding: 35px 38px;
+    padding: 28px 38px;
+    right: 0;
+    left: 0;
+    margin: auto;
   }
   .testimonial__comment::before {
     width: 14px;

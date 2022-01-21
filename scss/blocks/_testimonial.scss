@@ -201,7 +201,10 @@
   }
 
   .testimonial__comment {
-    padding: 35px 38px;
+    padding: 28px 38px;
+    right: 0;
+    left: 0;
+    margin: auto;
   
     &::before{
       width: 14px;
