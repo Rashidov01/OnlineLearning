@@ -50,3 +50,98 @@
   font-family: $font-stack;
   @include button-style;
 }
+
+@include breakpoint-down(1480px){
+  .integrations__list{
+    margin-right: 200px;
+  }
+
+  .integrations__entrance{
+    font-size: 18px;
+  }
+
+  .integrations__title{
+    font-size: 28px;
+  }
+
+  .integrations__text{
+    width: 480px;
+    font-size: 18px;
+  }
+
+  .integrations__btn{
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+  .integrations__img{
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+@include breakpoint-down(1050px){
+  .integrations__list{
+    margin-right: 100px;
+  }
+
+  .integrations__entrance{
+    font-size: 16px;
+
+    &::before{
+      width: 50px;
+    }
+  }
+
+  .integrations__title{
+    font-size: 25px;
+    width: 410px;
+  }
+
+  .integrations__text{
+    width: 410px;
+    font-size: 16px;
+  }
+}
+
+@include breakpoint-down(880px){
+  .integrations__inner{
+    flex-direction: column;
+  }
+
+  .integrations__list{
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .integrations__content{
+    text-align: left;
+  }
+
+  .integrations__title{
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .integrations__text{
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@include breakpoint-down(620px){
+  .integrations__img{
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@include breakpoint-down(420px){
+  .integrations__btn{
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
