@@ -257,6 +257,10 @@
     margin-bottom: 120px;
   }
 
+  .features__wrapper-img{
+    margin-bottom: 90px;
+  }
+
   .features__wrapper-holder-add{
     &::after{
       position: absolute;
@@ -288,6 +292,10 @@
 @include breakpoint-down(540px){
   .features__title{
     font-size: 26px;
+  }
+
+  .features__wrapper-img{
+    margin-bottom: 40px;
   }
 
   .features__description{
