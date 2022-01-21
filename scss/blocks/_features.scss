@@ -253,6 +253,10 @@
 }
 
 @include breakpoint-down(780px){
+  .features__wrapper{
+    margin-bottom: 80px;
+  }
+
   .features__description{
     margin-bottom: 120px;
   }
@@ -290,6 +294,10 @@
 }
 
 @include breakpoint-down(540px){
+  .features__wrapper{
+    margin-bottom: 50px;
+  }
+  
   .features__title{
     font-size: 26px;
   }

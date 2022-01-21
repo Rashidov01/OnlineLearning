@@ -1253,7 +1253,7 @@ a {
 }
 
 .skilline__account-item {
-  padding: 130px 160px;
+  padding: 130px 150px;
   margin-right: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1279,7 +1279,7 @@ a {
 .skilline__account-heading {
   margin-bottom: 18px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 27px;
   text-transform: uppercase;
   line-height: 48px;
   text-align: center;
@@ -1970,6 +1970,9 @@ a {
 }
 
 @media only screen and (max-width: 780px) {
+  .features__wrapper {
+    margin-bottom: 80px;
+  }
   .features__description {
     margin-bottom: 120px;
   }
@@ -2001,6 +2004,9 @@ a {
 }
 
 @media only screen and (max-width: 540px) {
+  .features__wrapper {
+    margin-bottom: 50px;
+  }
   .features__title {
     font-size: 26px;
   }
@@ -2365,7 +2371,7 @@ a {
   left: 0;
   top: 0;
   width: 14px;
-  height: 330px;
+  height: 100%;
   background-color: #F77766;
   border-radius: 20px 0px 0px 20px;
   content: '';
@@ -2463,16 +2469,6 @@ a {
     width: 70px;
     height: 70px;
   }
-  .testimonial__comment {
-    padding: 28px 38px;
-    right: 0;
-    left: 0;
-    margin: auto;
-  }
-  .testimonial__comment::before {
-    width: 14px;
-    height: 280px;
-  }
   .testimonial__comment-text {
     margin-bottom: 32px;
     width: 480px;
@@ -2511,7 +2507,14 @@ a {
 
 @media only screen and (max-width: 1100px) {
   .testimonial__comment {
-    display: none;
+    padding: 28px 38px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .testimonial__comment::before {
+    width: 14px;
+    height: 280px;
   }
   .testimonial__inner {
     -webkit-box-align: center;
@@ -2524,9 +2527,25 @@ a {
   .testimonial__holder-btn {
     display: none;
   }
+  .testimonial__desc {
+    width: 380px;
+    font-size: 16px;
+  }
+  .testimonial__btn {
+    padding: 14px 70px 14px 25px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .testimonial__btn::after {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 980px) {
+  .testimonial__comment {
+    display: none;
+  }
   .testimonial {
     margin-bottom: 140px;
   }
@@ -2547,14 +2566,6 @@ a {
   .testimonial__desc {
     width: 100%;
     font-size: 18px;
-  }
-  .testimonial__btn {
-    font-size: 15px;
-    padding: 12px 70px 12px 25px;
-  }
-  .testimonial__btn::after {
-    width: 52px;
-    height: 52px;
   }
 }
 
