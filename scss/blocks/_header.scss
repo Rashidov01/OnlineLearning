@@ -61,9 +61,14 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
+  transition: all 0.5s ease;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover{
+    opacity: 0.8;
   }
 }
 
